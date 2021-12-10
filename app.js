@@ -13,6 +13,15 @@ document.addEventListener('DOMContentLoaded', getBooks)
 const bookList = document.querySelector('#book-list')
 bookList.addEventListener('click', delBook)
 
+// book filter keyboard event
+const filter = document.querySelector('#filter')
+filter.addEventListener('keyup', filterBook)
+
+function filterBook(event){
+    let filter = event.target.value.toLowerCase()
+    ui.filterData(filter)
+}
+
 function delBook(event){
     if(event.target.textContent === 'X'){
         const book = ui.getBook(event.target)
@@ -21,7 +30,6 @@ function delBook(event){
         }
     }
 }
-
 
 
 function getBooks(){
