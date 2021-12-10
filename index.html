@@ -15,7 +15,7 @@
     <div class="container mt-5">
         <div class="row">
             <h4>Add Book</h4>
-            <form class="col-5">
+            <form class="col-5" id="book-form">
                 <div class="mb-4">
                     <label for="title" class="form-label">Title</label>
                     <input type="text" class="form-control" id="title">
@@ -47,22 +47,12 @@
                 <th>ISBN#</th>
             </tr>
             </thead>
-            <tbody>
-            <tr>
-                <td>Tõde ja õigus</td>
-                <td>Naksitrallid</td>
-                <td>123789</td>
-            </tr>
-            <tr>
-                <td>A.H Tammsaare</td>
-                <td>Eino Raud</td>
-                <td>123788</td>
-            </tr>
+            <tbody id="book-list">
+
             </tbody>
         </table>
     </div>
 </div>
-
 
 
 <!-- Compiled and minified JavaScript -->
